@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { searchTracks } from './services/deezer';
+import Layout from './components/Layout'
+import Home from './pages/Home';
 
 export default function App() {
   
@@ -14,8 +16,8 @@ export default function App() {
   }, []); // The empty array ensures this only happens ONCE when the app loads
 
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Layout>
+      <Home/>
+    </Layout>
   );
 }
